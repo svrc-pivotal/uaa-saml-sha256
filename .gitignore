@@ -1,0 +1,17 @@
+*~
+#*
+.#*
+*#
+.access_token
+.result
+.cache
+.classpath
+.project
+.DS_Store
+.settings/
+.gradle
+build/
+bin
+.idea/
+.metadata/
+
