@@ -40,9 +40,10 @@ public class SAMLBootstrap extends org.springframework.security.saml.SAMLBootstr
         SignatureConstants.ALGO_ID_SIGNATURE_RSA_SHA256.equals(url) ||
         SignatureConstants.ALGO_ID_SIGNATURE_RSA_SHA512.equals(url)) {
         this.signatureUrl = url;
+        log.warn("Using SAML XML digital signature: " + url);
       }
       else {
-        log.warn("Invalid SAML digital signature: " + url + ", defaulting to " + this.signatureUrl);
+        log.warn("Invalid SAML XML digital signature: " + url + ", defaulting to " + this.signatureUrl);
       }
     }
 }
