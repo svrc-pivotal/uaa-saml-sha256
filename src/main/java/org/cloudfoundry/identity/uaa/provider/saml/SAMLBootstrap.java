@@ -6,6 +6,9 @@ import org.opensaml.xml.signature.SignatureConstants;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.BeansException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /** Enables SHA256 or SHA512 Digital Signatures and Signature Reference Digests to SAML Requests & Assertions
   *
   */
